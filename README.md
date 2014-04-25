@@ -26,6 +26,6 @@ Be sure to also:
 
  - expire the associated user account
  - disable the password
- - kill all process with a negative pid to kill the process tree completely `kill -9 $(pgrep -u <username> | sed 's/^/-/')`
+ - kill all temp user's processes with a negative pid to kill the process tree completely `kill -9 $(pgrep -u <username> | sed 's/^/-/')`
  - cleanup (`rm -rf`) / give (`mv + chown`) homedir to someone
  - after all files and processes are expunged, reap the user account too
